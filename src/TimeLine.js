@@ -26,7 +26,7 @@ export default function TimeLine() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="success">
-            <MdEngineering size={40} size={40} />
+            <MdEngineering size={40} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -59,7 +59,7 @@ export default function TimeLine() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <MdEngineering size={40} size={40} />
+            <MdEngineering size={40} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -92,7 +92,7 @@ export default function TimeLine() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary" variant="outlined">
-            <MdEngineering size={40} size={40} />
+            <MdEngineering size={40} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -124,7 +124,7 @@ export default function TimeLine() {
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot style={{ color: "#ff5722" }} variant="outlined">
-            <MdEngineering size={40} size={40} />
+            <MdEngineering size={40} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -153,7 +153,7 @@ export default function TimeLine() {
         <TimelineSeparator>
           <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
           <TimelineDot>
-            <MdEngineering size={40} size={40} />
+            <MdEngineering size={40} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
