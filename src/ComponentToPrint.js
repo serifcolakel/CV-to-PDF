@@ -8,6 +8,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
 import { Rating, Typography } from "@mui/material";
+import Details from "./Details";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -214,8 +215,10 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                   color: "#fff",
                   textAlign: "center",
                   fontSize: ".75rem",
-                  padding: "15px 3px 5px 3px",
+                  marginTop: "8px",
+                  padding: "5px 3px 5px 3px",
                   borderBottom: "1px solid #ff5722",
+                  borderTop: "1px solid #ff5722",
                   width: "100%",
                 }}
               >
@@ -251,14 +254,16 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                   color: "#fff",
                   textAlign: "center",
                   fontSize: ".75rem",
-                  padding: "15px 3px 5px 3px",
+                  padding: "5px 3px 5px 3px",
+                  marginTop: "8px",
+                  borderTop: "1px solid #ff5722",
                   borderBottom: "1px solid #ff5722",
                   width: "100%",
                 }}
               >
                 Prof.Dr. Melih Cevdet İnce
               </Typography>
-              <a href="mailto:melihcevdet.ince@ozal.edu.tr">
+              <a href="mailto:mcince@gmail.com">
                 <MdMail size={18} color="#fff" />
                 <Typography
                   sx={{
@@ -267,13 +272,9 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     fontSize: ".75rem",
                   }}
                 >
-                  melihcevdet.ince@ozal.edu.tr
+                  mcince@gmail.com
                 </Typography>
               </a>
-            </Item>
-          </Grid>
-          <Grid item xs={8}>
-            <Item sx={{ backgroundColor: "#fff" }}>
               <Typography
                 sx={{
                   textAlign: "left",
@@ -282,7 +283,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                   fontWeight: "bold",
                   color: "#fff",
                   fontSize: "0.8rem",
-                  borderLeft: "15px solid #ff5722",
+                  borderLeft: "5px solid #ff5722",
                   marginTop: "1rem",
                   fontFamily: "initial",
                 }}
@@ -291,10 +292,11 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
               </Typography>
               <div className="language">
                 <span>İngilizce</span>
-                <Rating name="read-only" value={3} readOnly />
+                <Rating value={3} readOnly />
               </div>
             </Item>
           </Grid>
+          <Details />
         </Grid>
       </Box>
     </div>

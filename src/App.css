@@ -13,10 +13,16 @@ a:hover > * {
 .language {
   display: flex;
   align-items: center;
-  gap: 12rem;
+  gap: 1rem;
   weight: bold;
   font-size: 0.8rem;
   padding: 0 30px;
   margin-top: 15px;
-  color: #000;
+  color: #fff;
+}
+.work-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
