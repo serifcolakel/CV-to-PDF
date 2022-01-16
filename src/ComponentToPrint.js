@@ -21,7 +21,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export const ComponentToPrint = React.forwardRef((props, ref) => {
   const componentRef = useRef();
-  const [close, setClose] = React.useState(true);
+
   return (
     <>
       <div className="App" ref={componentRef}>
@@ -31,7 +31,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
               <Item>
                 <img
                   src="https://i.hizliresim.com/5h20dz6.jpg"
-                  alt="photo"
+                  alt="serif-foto"
                   style={{
                     width: "180px",
                     border: "5px solid #ff5722",
@@ -85,7 +85,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                 >
                   İLETİŞİM BİLGİLERİ
                 </Typography>
-                <a>
+                <a href="/" rel="noopener">
                   <MdLocationPin size={18} color="#fff" />
                   <Typography
                     sx={{
@@ -123,6 +123,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                 </a>
                 <a
                   href="https://www.linkedin.com/in/serifcolakel/"
+                  rel="noreferrer"
                   target="_blank"
                 >
                   <BsLinkedin size={18} color="#fff" />
@@ -136,7 +137,11 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     /serifcolakel
                   </Typography>
                 </a>
-                <a href="https://serifcolakel.vercel.app/" target="_blank">
+                <a
+                  href="https://serifcolakel.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <AiOutlineGlobal size={18} color="#fff" />
                   <Typography
                     sx={{
@@ -148,7 +153,11 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     https://serifcolakel.vercel.app/
                   </Typography>
                 </a>
-                <a href="https://github.com/serifcolakel" target="_blank">
+                <a
+                  href="https://github.com/serifcolakel"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <AiFillGithub size={18} color="#fff" />
                   <Typography
                     sx={{

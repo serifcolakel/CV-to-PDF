@@ -3,6 +3,8 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import TimeLine from "./TimeLine";
+import EducationTimeLine from "./EducationTimeLine";
+import Skill from "./Skill";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -63,6 +65,39 @@ export default function Details() {
           İŞ DENEYİMLERİ
         </Typography>
         <TimeLine />
+        <Typography
+          sx={{
+            textAlign: "left",
+            backgroundColor: "#232537",
+            padding: "10px 15px",
+            fontWeight: "bold",
+            color: "#fff",
+            fontSize: "0.8rem",
+            borderLeft: "15px solid #ff5722",
+            marginTop: "1rem",
+            fontFamily: "initial",
+          }}
+        >
+          EĞİTİM BİLGİLERİ
+        </Typography>
+        <EducationTimeLine />
+        <Typography
+          sx={{
+            textAlign: "left",
+            backgroundColor: "#232537",
+            padding: "10px 15px",
+            fontWeight: "bold",
+
+            color: "#fff",
+            fontSize: "0.8rem",
+            borderLeft: "15px solid #ff5722",
+
+            fontFamily: "initial",
+          }}
+        >
+          PROGRAMLAMA DİLLERİ & ARAÇLAR
+        </Typography>
+        <Skill />
       </Item>
     </Grid>
   );

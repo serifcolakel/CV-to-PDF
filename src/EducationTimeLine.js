@@ -6,12 +6,12 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { MdEngineering } from "react-icons/md";
+import { MdSchool } from "react-icons/md";
 import Typography from "@mui/material/Typography";
 
 export default function TimeLine() {
   return (
-    <Timeline position="alternate">
+    <Timeline position="alternate" sx={{ marginBottom: "6rem" }}>
       <TimelineItem>
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
@@ -19,14 +19,14 @@ export default function TimeLine() {
           variant="body2"
           color="text.secondary"
         >
-          02.2020 - 04.2020
-          <Typography>Gebze / Kocaeli</Typography>
-          <strong>Stajyer Mühendis</strong>
+          <strong>09.2021 - Devam Ediyor</strong>
+          <Typography>Örgün Öğretim</Typography>
+          <strong>Türkçe</strong>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="success">
-            <MdEngineering size={40} />
+            <MdSchool size={40} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -36,13 +36,11 @@ export default function TimeLine() {
             component="span"
             style={{ color: "green", fontWeight: "bolder" }}
           >
-            Antsis Elektronik
+            Malatya Turgut Özal Üniversitesi
           </Typography>
 
-          <Typography>
-            Gömülü Sistemler ve Anten sistemleri üzerine gerçekleştirilen
-            projeleri tasarlanması ve gerçekleştirilmesi.
-          </Typography>
+          <Typography>Enformatik Enstitüsü</Typography>
+          <strong>Elektrik/Elektronik Mühendisliği Tezli Yüksek Lisans</strong>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -52,14 +50,20 @@ export default function TimeLine() {
           variant="body2"
           color="text.secondary"
         >
-          06.2019 - 08.2019
-          <Typography>İskenderun / Hatay</Typography>
-          <strong>Stajyer Mühendis</strong>
+          09.2015 - 06.2020 (mezun)
+          <Typography>İkinci Öğretim</Typography>
+          <Typography
+            variant="h6"
+            component="span"
+            style={{ color: "blue", fontWeight: "bold" }}
+          >
+            3.38/4.00
+          </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <MdEngineering size={40} />
+            <MdSchool size={40} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -67,15 +71,12 @@ export default function TimeLine() {
           <Typography
             variant="h6"
             component="span"
-            style={{ color: "blue", fontWeight: "bolder" }}
+            style={{ color: "blue", fontWeight: "bold" }}
           >
-            İSDEMİR
+            Fırat Üniversitesi
           </Typography>
-          <Typography>
-            Sıcak Haddehane de Elektrik & Otomasyon Bakım biriminde arızaların
-            ve sistem stabilizasyonun gerçekleştirilmesi , Sıcak haddehane
-            process'in incelenmesi ve iyileştirmelerin yapılması
-          </Typography>
+          <Typography>Teknoloji Fakültesi</Typography>
+          <strong>Elektrik/Elektronik Mühendisliği</strong>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -85,46 +86,20 @@ export default function TimeLine() {
           variant="body2"
           color="text.secondary"
         >
-          06.2014 - 12.2014
-          <Typography>Antakya / Hatay</Typography>
-          <strong>Elektrik Kalfası</strong>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <MdEngineering size={40} />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          08.2018 - Devam Ediyor (4.sınıf)
+          <Typography>Örgün Öğretim</Typography>
           <Typography
             variant="h6"
             component="span"
-            style={{ fontWeight: "bolder" }}
+            style={{ color: "#ff5722", fontWeight: "bold" }}
           >
-            Yalçın Elektrik
+            3.28/4.00 (Ç.A.P)
           </Typography>
-          <Typography>
-            Ev ve inşaat elektriği bakımı onarımı , malzeme satışı , elektrikli
-            ev aletleri bakım ve onarımı
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          align="right"
-          variant="body2"
-          color="text.secondary"
-        >
-          06.2013 - 09.2013
-          <Typography>Antakya / Hatay</Typography>
-          <strong>Stajyer Öğrenci</strong>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot style={{ color: "#ff5722" }} variant="outlined">
-            <MdEngineering size={40} />
+            <MdSchool size={40} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -132,11 +107,12 @@ export default function TimeLine() {
           <Typography
             variant="h6"
             component="span"
-            style={{ color: "#ff5722", fontWeight: "bolder" }}
+            style={{ color: "#ff5722", fontWeight: "bold" }}
           >
-            Akın Bilişim
+            Fırat Üniversitesi
           </Typography>
-          <Typography>Bilişim ve Ses Sistemleri Bakım onarımı</Typography>
+          <Typography>Mühendislik Fakültesi</Typography>
+          <strong>Bilgisayar Mühendisliği</strong>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -146,14 +122,20 @@ export default function TimeLine() {
           variant="body2"
           color="text.secondary"
         >
-          06.2012 - 08.2012
-          <Typography>Antakya / Hatay</Typography>
-          <strong>Stajyer Öğrenci</strong>
+          08.2010 - 06.2014 (mezun)
+          <Typography>Örgün Öğretim</Typography>
+          <Typography
+            variant="h6"
+            component="span"
+            style={{ color: "grey", fontWeight: "bold" }}
+          >
+            70/100
+          </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-          <TimelineDot>
-            <MdEngineering size={40} />
+          <TimelineConnector />
+          <TimelineDot style={{ color: "grey" }} variant="outlined">
+            <MdSchool size={40} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -161,13 +143,13 @@ export default function TimeLine() {
           <Typography
             variant="h6"
             component="span"
-            style={{ color: "grey", fontWeight: "bolder" }}
+            style={{ color: "grey", fontWeight: "bold" }}
           >
-            M & B Bilişim
+            Erol Bilecik Teknik ve Endüstri Meslek Lisesi
           </Typography>
-          <Typography>
-            Güvenlik Sistemleri Bakım Onarım ve Montajının gerçekleştirilmesi
-          </Typography>
+
+          <Typography>Elektrik ve Elektronik Teknolojisi</Typography>
+          <strong>Güvenlik Sistemleri</strong>
         </TimelineContent>
       </TimelineItem>
     </Timeline>

@@ -10,7 +10,8 @@ a:hover > * {
   color: #ff5722;
 }
 
-.language {
+.language,
+.skills {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -19,6 +20,11 @@ a:hover > * {
   padding: 0 30px;
   margin-top: 15px;
   color: #fff;
+}
+.skills {
+  color: grey;
+  width: 50%;
+  justify-content: space-between;
 }
 .work-details {
   display: flex;
