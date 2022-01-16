@@ -11,7 +11,8 @@ a:hover > * {
 }
 
 .language,
-.skills {
+.skills,
+.skills-mob {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -23,7 +24,12 @@ a:hover > * {
 }
 .skills {
   color: grey;
-  width: 50%;
+  width: 30%;
+  justify-content: space-between;
+}
+.skills-mob {
+  color: grey;
+  width: 70%;
   justify-content: space-between;
 }
 .work-details {

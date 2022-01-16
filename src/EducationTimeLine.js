@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 
 export default function TimeLine() {
   return (
-    <Timeline position="alternate" sx={{ marginBottom: "6rem" }}>
+    <Timeline position="alternate" sx={{ marginBottom: "2rem" }}>
       <TimelineItem>
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}

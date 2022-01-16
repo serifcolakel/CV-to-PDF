@@ -9,6 +9,8 @@ import Grid from "@mui/material/Grid";
 import ReactToPrint from "react-to-print";
 import { Rating, Typography } from "@mui/material";
 import Details from "./Details";
+import { useWindowWidth } from "@react-hook/window-size";
+
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
@@ -21,13 +23,13 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export const ComponentToPrint = React.forwardRef((props, ref) => {
   const componentRef = useRef();
-
+  const sliderWidth = useWindowWidth();
   return (
     <>
       <div className="App" ref={componentRef}>
         <Box sx={{ flexGrow: 1, padding: 1 }}>
           <Grid container spacing={2}>
-            <Grid item xs={4}>
+            <Grid item xs={sliderWidth >= 768 ? 4 : 12}>
               <Item>
                 <img
                   src="https://i.hizliresim.com/5h20dz6.jpg"

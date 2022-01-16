@@ -1,5 +1,6 @@
 import { Rating, Typography } from "@mui/material";
 import React from "react";
+import { useWindowWidth } from "@react-hook/window-size";
 const skills = [
   { name: "HTML", level: 4 },
   { name: "CSS", level: 4 },
@@ -15,10 +16,14 @@ const skills = [
   { name: "GitHub", level: 4 },
 ];
 export default function Skill() {
+  const sliderWidth = useWindowWidth();
   return (
     <>
       {skills.map((skill, index) => (
-        <div key={index} className="skills">
+        <div
+          key={index}
+          className={sliderWidth >= 768 ? "skills" : "skills-mob"}
+        >
           <Typography>{skill.name}</Typography>
           <Rating value={skill.level} readOnly />
         </div>

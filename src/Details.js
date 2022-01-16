@@ -5,6 +5,7 @@ import Paper from "@mui/material/Paper";
 import TimeLine from "./TimeLine";
 import EducationTimeLine from "./EducationTimeLine";
 import Skill from "./Skill";
+import { useWindowWidth } from "@react-hook/window-size";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -17,8 +18,9 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function Details() {
+  const sliderWidth = useWindowWidth();
   return (
-    <Grid item xs={8}>
+    <Grid item xs={sliderWidth >= 768 ? 8 : 12}>
       <Item sx={{ backgroundColor: "#fff" }}>
         <Typography
           sx={{
@@ -74,7 +76,7 @@ export default function Details() {
             color: "#fff",
             fontSize: "0.8rem",
             borderLeft: "15px solid #ff5722",
-            marginTop: "1rem",
+            marginTop: "10rem",
             fontFamily: "initial",
           }}
         >
