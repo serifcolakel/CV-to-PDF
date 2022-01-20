@@ -28,6 +28,9 @@ export default function Details() {
     <Grid item xs={sliderWidth >= 768 ? 8 : 12}>
       <Item sx={{ backgroundColor: "#fff" }}>
         <Typography
+          onClick={() => {
+            window.open("https://www.linkedin.com/");
+          }}
           sx={{
             textAlign: "left",
             backgroundColor: "#232537",
