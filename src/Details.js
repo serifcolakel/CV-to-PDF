@@ -116,7 +116,7 @@ export default function Details() {
             backgroundColor: "#232537",
             padding: "10px 15px",
             fontWeight: "bold",
-            marginTop: "2rem",
+            marginTop: "3rem",
             color: "#fff",
             fontSize: "0.8rem",
             borderLeft: "15px solid #ff5722",
