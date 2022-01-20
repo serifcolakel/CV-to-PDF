@@ -20,12 +20,15 @@ const Item = styled(Paper)(({ theme }) => ({
   paddingTop: "2rem",
   color: theme.palette.text.secondary,
 }));
+export const LangContext = React.createContext();
 
 export const ComponentToPrint = React.forwardRef((props, ref) => {
   const componentRef = useRef();
   const sliderWidth = useWindowWidth();
+  const [language, setLanguage] = React.useState(true);
+
   return (
-    <>
+    <LangContext.Provider value={language}>
       <div className="App" ref={componentRef}>
         <Box sx={{ flexGrow: 1, padding: 1 }}>
           <Grid container spacing={2}>
@@ -47,6 +50,13 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                   )}
                   content={() => componentRef.current}
                 />
+
+                <button
+                  className="btn btn-secondary"
+                  onClick={() => setLanguage(!language)}
+                >
+                  Language : {language ? "TÜRKÇE" : "ENGLISH"}
+                </button>
                 <Typography
                   variant="h6"
                   color="textPrimary"
@@ -59,7 +69,8 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     fontFamily: "initial",
                   }}
                 >
-                  ŞERİF ÇOLAKEL
+                  {!language ? "SERIF COLAKEL" : "ŞERİF ÇOLAKEL"}
+
                   <Typography
                     color="textPrimary"
                     sx={{
@@ -69,7 +80,9 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                       marginTop: "1rem",
                     }}
                   >
-                    ELEKTRİK ve ELEKTRONİK MÜHENDİSİ
+                    {!language
+                      ? "Electric and electronic engineer"
+                      : "Elektrik ve Elektronik Mühendisi"}
                   </Typography>
                 </Typography>
                 <Typography
@@ -83,9 +96,10 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     borderLeft: "5px solid #ff5722",
                     marginTop: "1rem",
                     fontFamily: "initial",
+                    textTransform: "uppercase",
                   }}
                 >
-                  İLETİŞİM BİLGİLERİ
+                  {!language ? "contact Information" : "İletİşİm bİlgİlerİ"}
                 </Typography>
                 <a href="/" rel="noopener">
                   <MdLocationPin size={18} color="#fff" />
@@ -149,7 +163,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     sx={{
                       fontWeight: "bold",
                       color: "#fff",
-                      fontSize: ".75rem",
+                      fontSize: ".55rem",
                     }}
                   >
                     https://serifcolakel.vercel.app/
@@ -184,7 +198,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     fontFamily: "initial",
                   }}
                 >
-                  REFERANSLAR
+                  {!language ? "REFERENCES" : "REFERANSLAR"}
                 </Typography>
                 <Typography
                   sx={{
@@ -197,12 +211,11 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     width: "100%",
                   }}
                 >
-                  Prof. Dr. Abdulkadir ŞENGÜR
+                  {language
+                    ? "Prof. Dr. Abdulkadir ŞENGÜR"
+                    : "Prof. Dr. Abdulkadir SENGUR"}
                 </Typography>
-                <a
-                  href="mailto:ksengur@firat.edu.tr
-"
-                >
+                <a href="mailto:ksengur@firat.edu.tr">
                   <MdMail size={18} color="#fff" />
 
                   <Typography
@@ -240,7 +253,9 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     width: "100%",
                   }}
                 >
-                  Prof.Dr. Hüseyin Altun
+                  {!language
+                    ? "Prof. Dr. Huseyin Altun"
+                    : "Prof. Dr. Hüseyin Altun"}
                 </Typography>
                 <a href="mailto:haltun@firat.edu.tr">
                   <MdMail size={18} color="#fff" />
@@ -279,7 +294,9 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     width: "100%",
                   }}
                 >
-                  Prof.Dr. Melih Cevdet İnce
+                  {!language
+                    ? "Prof. Dr. Prof.Dr. Melih Cevdet İnce"
+                    : "Prof. Dr. Prof.Dr. Melih Cevdet Ince"}
                 </Typography>
                 <a href="mailto:mcince@gmail.com">
                   <MdMail size={18} color="#fff" />
@@ -306,10 +323,10 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     fontFamily: "initial",
                   }}
                 >
-                  YABANCI DİL
+                  {language ? "YABANCI DİL" : "LANGUAGE"}
                 </Typography>
                 <div className="language">
-                  <span>İngilizce</span>
+                  <span>{language ? "İngilizce" : "English"}</span>
                   <Rating value={3} readOnly />
                 </div>
               </Item>
@@ -318,6 +335,6 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
           </Grid>
         </Box>
       </div>
-    </>
+    </LangContext.Provider>
   );
 });

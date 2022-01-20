@@ -1,6 +1,6 @@
 a {
   display: flex;
-  padding: 0 28px;
+  padding: 0 14px;
   align-items: center;
   gap: 1rem;
   margin-top: 15px;
@@ -44,7 +44,7 @@ a:hover > * {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  margin-top: 15px;
+  margin-top: 5px;
   background: #ff5722;
   color: #fff;
   font-weight: bold;
@@ -57,4 +57,42 @@ a:hover > * {
 .btn:hover {
   color: #ff5722;
   background: #fff;
+}
+.btn-secondary {
+  background: #7849f7;
+  color: #fff;
+}
+.btn-secondary:hover {
+  color: #7849f7;
+  background: #fff;
+}
+.technologies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.link-project-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+.blue {
+  background: blue;
+}
+.green {
+  background: green;
+}
+.orange {
+  background: #ff5722;
+}
+.grey {
+  background: grey;
 }

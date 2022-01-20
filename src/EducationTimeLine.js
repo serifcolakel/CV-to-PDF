@@ -8,10 +8,14 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { MdSchool } from "react-icons/md";
 import Typography from "@mui/material/Typography";
+import { LangContext } from "./ComponentToPrint";
+import EN from "./en.json";
 
 export default function TimeLine() {
+  const lang = React.useContext(LangContext);
+
   return (
-    <Timeline position="alternate" sx={{ marginBottom: "2rem" }}>
+    <Timeline position="alternate">
       <TimelineItem>
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
@@ -19,9 +23,13 @@ export default function TimeLine() {
           variant="body2"
           color="text.secondary"
         >
-          <strong>09.2021 - Devam Ediyor</strong>
-          <Typography>Örgün Öğretim</Typography>
-          <strong>Türkçe</strong>
+          <strong>
+            {lang ? "09.2021 - Devam Ediyor" : EN[2].education[0].date}
+          </strong>
+          <Typography>
+            {lang ? "Örgün Öğretim" : EN[2].education[0].educationType}
+          </Typography>
+          <strong>{lang ? "Türkçe" : EN[2].education[0].language}</strong>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -36,11 +44,19 @@ export default function TimeLine() {
             component="span"
             style={{ color: "green", fontWeight: "bolder" }}
           >
-            Malatya Turgut Özal Üniversitesi
+            {lang
+              ? " Malatya Turgut Özal Üniversitesi"
+              : EN[2].education[0].university}
           </Typography>
 
-          <Typography>Enformatik Enstitüsü</Typography>
-          <strong>Elektrik/Elektronik Mühendisliği Tezli Yüksek Lisans</strong>
+          <Typography>
+            {lang ? "Enformatik Enstitüsü" : EN[2].education[0].enst}
+          </Typography>
+          <strong>
+            {lang
+              ? "Elektrik/Elektronik Mühendisliği Tezli Yüksek Lisans"
+              : EN[2].education[0].description}
+          </strong>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -50,8 +66,11 @@ export default function TimeLine() {
           variant="body2"
           color="text.secondary"
         >
-          09.2015 - 06.2020 (mezun)
-          <Typography>İkinci Öğretim</Typography>
+          {lang ? " 09.2015 - 06.2020 (mezun)" : EN[2].education[1].date}
+
+          <Typography>
+            {lang ? "İkinci Öğretim" : EN[2].education[1].educationType}
+          </Typography>
           <Typography
             variant="h6"
             component="span"
@@ -73,10 +92,16 @@ export default function TimeLine() {
             component="span"
             style={{ color: "blue", fontWeight: "bold" }}
           >
-            Fırat Üniversitesi
+            {lang ? "Fırat Üniversitesi" : EN[2].education[1].university}
           </Typography>
-          <Typography>Teknoloji Fakültesi</Typography>
-          <strong>Elektrik/Elektronik Mühendisliği</strong>
+          <Typography>
+            {lang ? "Teknoloji Fakültesi" : EN[2].education[1].enst}
+          </Typography>
+          <strong>
+            {lang
+              ? "Elektrik/Elektronik Mühendisliği"
+              : EN[2].education[1].description}
+          </strong>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -86,14 +111,17 @@ export default function TimeLine() {
           variant="body2"
           color="text.secondary"
         >
-          08.2018 - Devam Ediyor (4.sınıf)
-          <Typography>Örgün Öğretim</Typography>
+          {lang ? "08.2018 - Devam Ediyor (4.sınıf)" : EN[2].education[2].date}
+
+          <Typography>
+            {lang ? "Örgün Öğretim" : EN[2].education[2].educationType}
+          </Typography>
           <Typography
             variant="h6"
             component="span"
             style={{ color: "#ff5722", fontWeight: "bold" }}
           >
-            3.28/4.00 (Ç.A.P)
+            3.28/4.00
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -109,10 +137,16 @@ export default function TimeLine() {
             component="span"
             style={{ color: "#ff5722", fontWeight: "bold" }}
           >
-            Fırat Üniversitesi
+            {lang ? "Fırat Üniversitesi" : EN[2].education[2].university}
           </Typography>
-          <Typography>Mühendislik Fakültesi</Typography>
-          <strong>Bilgisayar Mühendisliği</strong>
+          <Typography>
+            {lang ? "Mühendislik Fakültesi" : EN[2].education[2].enst}
+          </Typography>
+          <strong>
+            {lang
+              ? "Bilgisayar Mühendisliği (Ç.A.P)"
+              : EN[2].education[2].description}
+          </strong>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -122,8 +156,11 @@ export default function TimeLine() {
           variant="body2"
           color="text.secondary"
         >
-          08.2010 - 06.2014 (mezun)
-          <Typography>Örgün Öğretim</Typography>
+          {lang ? "08.2010 - 06.2014 (mezun)" : EN[2].education[3].date}
+
+          <Typography>
+            {lang ? "Örgün Öğretim" : EN[2].education[3].educationType}
+          </Typography>
           <Typography
             variant="h6"
             component="span"
@@ -145,11 +182,19 @@ export default function TimeLine() {
             component="span"
             style={{ color: "grey", fontWeight: "bold" }}
           >
-            Erol Bilecik Teknik ve Endüstri Meslek Lisesi
+            {lang
+              ? "Erol Bilecik Teknik ve Endüstri Meslek Lisesi"
+              : EN[2].education[3].university}
           </Typography>
 
-          <Typography>Elektrik ve Elektronik Teknolojisi</Typography>
-          <strong>Güvenlik Sistemleri</strong>
+          <Typography>
+            {lang
+              ? "Elektrik ve Elektronik Teknolojisi"
+              : EN[2].education[3].enst}
+          </Typography>
+          <strong>
+            {lang ? "Güvenlik Sistemleri" : EN[2].education[3].description}
+          </strong>
         </TimelineContent>
       </TimelineItem>
     </Timeline>

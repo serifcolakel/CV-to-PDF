@@ -8,8 +8,12 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { MdEngineering } from "react-icons/md";
 import Typography from "@mui/material/Typography";
+import EN from "./en.json";
+import { LangContext } from "./ComponentToPrint";
 
 export default function TimeLine() {
+  const lang = React.useContext(LangContext);
+
   return (
     <Timeline position="alternate">
       <TimelineItem>
@@ -19,9 +23,13 @@ export default function TimeLine() {
           variant="body2"
           color="text.secondary"
         >
-          02.2020 - 04.2020
-          <Typography>Gebze / Kocaeli</Typography>
-          <strong>Stajyer Mühendis</strong>
+          {lang ? "02.2020 - 04.2020" : EN[1].experience[0].date}
+          <Typography>
+            {lang ? "Gebze / Kocaeli" : EN[1].experience[0].location}
+          </Typography>
+          <strong>
+            {lang ? "Stajyer Mühendis" : EN[1].experience[0].role}
+          </strong>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -36,12 +44,13 @@ export default function TimeLine() {
             component="span"
             style={{ color: "green", fontWeight: "bolder" }}
           >
-            Antsis Elektronik
+            {lang ? " Antsis Elektronik" : EN[1].experience[0].company}
           </Typography>
 
           <Typography>
-            Gömülü Sistemler ve Anten sistemleri üzerine gerçekleştirilen
-            projeleri tasarlanması ve gerçekleştirilmesi.
+            {lang
+              ? "Gömülü Sistemler ve Anten sistemleri üzerine gerçekleştirilen projeleri tasarlanması ve gerçekleştirilmesi."
+              : EN[1].experience[0].description}
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -53,8 +62,11 @@ export default function TimeLine() {
           color="text.secondary"
         >
           06.2019 - 08.2019
-          <Typography>İskenderun / Hatay</Typography>
-          <strong>Stajyer Mühendis</strong>
+          <Typography>Iskenderun / Hatay</Typography>
+          <strong>
+            {" "}
+            {lang ? "Stajyer Mühendis" : EN[1].experience[1].role}
+          </strong>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -69,12 +81,12 @@ export default function TimeLine() {
             component="span"
             style={{ color: "blue", fontWeight: "bolder" }}
           >
-            İSDEMİR
+            {lang ? " İSDEMİR" : EN[1].experience[1].company}
           </Typography>
           <Typography>
-            Sıcak Haddehane de Elektrik & Otomasyon Bakım biriminde arızaların
-            ve sistem stabilizasyonun gerçekleştirilmesi , Sıcak haddehane
-            process'in incelenmesi ve iyileştirmelerin yapılması
+            {lang
+              ? " Sıcak Haddehane de Elektrik & Otomasyon Bakım biriminde arızaların ve sistem stabilizasyonun gerçekleştirilmesi , Sıcak haddehane process'in incelenmesi ve iyileştirmelerin yapılması"
+              : EN[1].experience[1].description}
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -87,7 +99,9 @@ export default function TimeLine() {
         >
           06.2014 - 12.2014
           <Typography>Antakya / Hatay</Typography>
-          <strong>Elektrik Kalfası</strong>
+          <strong>
+            {lang ? " Elektrik Kalfası" : EN[1].experience[2].role}
+          </strong>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -102,11 +116,12 @@ export default function TimeLine() {
             component="span"
             style={{ fontWeight: "bolder" }}
           >
-            Yalçın Elektrik
+            {lang ? "Yalçın Elektrik" : EN[1].experience[2].company}
           </Typography>
           <Typography>
-            Ev ve inşaat elektriği bakımı onarımı , malzeme satışı , elektrikli
-            ev aletleri bakım ve onarımı
+            {lang
+              ? "Ev ve inşaat elektriği bakımı onarımı , malzeme satışı , elektrikli ev aletleri bakım ve onarımı"
+              : EN[1].experience[2].description}
           </Typography>
         </TimelineContent>
       </TimelineItem>
@@ -119,7 +134,7 @@ export default function TimeLine() {
         >
           06.2013 - 09.2013
           <Typography>Antakya / Hatay</Typography>
-          <strong>Stajyer Öğrenci</strong>
+          <strong>{lang ? "Stajyer Öğrenci" : EN[1].experience[3].role}</strong>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -134,9 +149,13 @@ export default function TimeLine() {
             component="span"
             style={{ color: "#ff5722", fontWeight: "bolder" }}
           >
-            Akın Bilişim
+            {lang ? "Akın Bilişim" : EN[1].experience[3].company}
           </Typography>
-          <Typography>Bilişim ve Ses Sistemleri Bakım onarımı</Typography>
+          <Typography>
+            {lang
+              ? "Bilişim ve Ses Sistemleri Bakım onarımı"
+              : EN[1].experience[3].description}
+          </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -148,7 +167,7 @@ export default function TimeLine() {
         >
           06.2012 - 08.2012
           <Typography>Antakya / Hatay</Typography>
-          <strong>Stajyer Öğrenci</strong>
+          <strong>{lang ? "Stajyer Öğrenci" : EN[1].experience[4].role}</strong>
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
@@ -163,10 +182,12 @@ export default function TimeLine() {
             component="span"
             style={{ color: "grey", fontWeight: "bolder" }}
           >
-            M & B Bilişim
+            {lang ? "M & B Bilişim" : EN[1].experience[4].company}
           </Typography>
           <Typography>
-            Güvenlik Sistemleri Bakım Onarım ve Montajının gerçekleştirilmesi
+            {lang
+              ? "Güvenlik Sistemleri Bakım Onarım ve Montajının gerçekleştirilmesi"
+              : EN[1].experience[4].description}
           </Typography>
         </TimelineContent>
       </TimelineItem>

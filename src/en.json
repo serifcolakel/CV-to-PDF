@@ -1,0 +1,100 @@
+[
+    {
+        "summary": "As a graduation project, during my internship at Isdemir, I had the opportunity to examine the quality control and identity of the steel in the steel production of Parstech, which is formed according to certain conditions, and the detection of the deterioration caused by the production errors that occur during the production by using image processing method and recording it on the determined identity is evaluated according to customer requests. We carried out the project on the development of the project under the consultancy of Prof.Dr.Abdulkadir Şengür. Also, I am still developing myself on these issues. I have been developing myself and producing projects in the front-end field for about 6 months in order to develop my interest in software in different fields. You can access the details of the projects on my github page."
+    },
+    {
+        "experience": [
+            {
+                "date": "02.2020 - 04.2020",
+                "location": "Gebze / Kocaeli",
+                "role": "Internship Engineering",
+                "company": "Antsis Elektronik",
+                "description": "Designing and realizing projects on Embedded Systems and Antenna systems."
+            },
+            {
+                "date": "06.2019 - 08.2019",
+                "location": "Iskenderun / Hatay",
+                "role": "Internship Engineering",
+                "company": "ISDEMIR",
+                "description": "Faults and system stabilization in the Electrical & Automation Maintenance unit in the Hot Rolling Mill, Examining the Hot Rolling Mill process and making improvements"
+            },
+            {
+                "date": "06.2014 - 12.2014",
+                "location": "Antakya / Hatay",
+                "role": "Electrician",
+                "company": "Yalcin Elektrik",
+                "description": "House and construction electrical maintenance and repair, sales of materials, maintenance and repair of electrical appliances"
+            },
+            {
+                "date": "06.2013 - 09.2013",
+                "location": "Antakya / Hatay",
+                "role": "Internship",
+                "company": "Akin Bilisim",
+                "description": "IT and Sound Systems Maintenance and Repair"
+            },
+            {
+                "date": "06.2012 - 08.2012",
+                "location": "Antakya / Hatay",
+                "role": "Internship",
+                "company": "M & B Bilisim",
+                "description": "Performing Maintenance, Repair and Installation of Security Systems"
+            }
+        ]
+    },
+    {
+        "education": [
+            {
+                "date": "09.2019 - In progress",
+                "educationType": "Formal education",
+                "language": "Turkish",
+                "university": "Malatya Turgut Ozal University",
+                "enst": "Faculty of Engineering and Natural Sciences",
+                "description": "Electrical/Electronics Engineering Thesis Master's Degree",
+                "grade": ""
+            },
+            {
+                "date": "09.2015 - 06.2020 (graduate)",
+                "educationType": "Secondary education",
+                "language": "Turkish",
+                "university": "Firat University",
+                "enst": "Faculty of Technology",
+                "description": "Electrical electronics Engineering",
+                "grade": "3.38/4.00"
+            },
+            {
+                "date": "08.2018 - Continuing (4th grade)",
+                "educationType": "Formal education",
+                "language": "Turkish",
+                "university": "Firat University",
+                "enst": "Faculty of Engineering",
+                "description": "Computer Engineering(D.M.P)",
+                "grade": "3.28/4.00"
+            },
+            {
+                "date": "09.2015 - 06.2020 (graduate)",
+                "educationType": "Formal education",
+                "language": "Turkish",
+                "university": "Erol Bilecik Technical and Industrial Vocational High School",
+                "enst": "Electrical and Electronics Technology",
+                "description": "Security systems",
+                "grade": "3.38/4.00"
+            }
+        ]
+    },
+    {
+        "projects": [
+            {
+                "description": "In this project, I developed the getir.com clone using ReactJS, TailwinCSS and Heroku."
+            },
+            {
+                "description": "In this project, I developed the spotify.com clone using ReactJS and TailwinCSS."
+            },
+            {
+                "description": "In this project, I participated in the front-end hiring challenge by Tatilbudur.com and entered the top 3."
+            },
+            {
+                "description": "In this project, I developed the messenger-app using React JS and Firebase."
+            }
+        ]
+    }
+]
