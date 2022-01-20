@@ -81,8 +81,8 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                     }}
                   >
                     {!language
-                      ? "Electric and electronic engineer"
-                      : "Elektrik ve Elektronik Mühendisi"}
+                      ? "Electric and Electronic Engineer - Front-End Developer"
+                      : "Elektrik ve Elektronik Mühendisi - Ön Uç Geliştirici"}
                   </Typography>
                 </Typography>
                 <Typography
