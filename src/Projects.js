@@ -7,7 +7,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { GiGearHammer } from "react-icons/gi";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaSass } from "react-icons/fa";
 import EN from "./en.json";
 import { LangContext } from "./ComponentToPrint";
 
@@ -16,6 +16,8 @@ import {
   SiNextdotjs,
   SiHeroku,
   SiFirebase,
+  SiVercel,
+  SiMongodb,
 } from "react-icons/si";
 
 import Typography from "@mui/material/Typography";
@@ -111,7 +113,7 @@ export default function Projects() {
       </TimelineItem>
       <TimelineItem className="timeline-item">
         <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
+          sx={{ m: "auto 4" }}
           align="right"
           variant="body2"
           color="text.secondary"
@@ -139,7 +141,6 @@ export default function Projects() {
         <TimelineContent
           sx={{
             py: "12px",
-            mr: "20px",
             overflow: "hidden",
           }}
         >
@@ -160,7 +161,7 @@ export default function Projects() {
           </Typography>
         </TimelineContent>
       </TimelineItem>
-      <TimelineItem>
+      <TimelineItem className="timeline-item">
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
           align="right"
@@ -199,6 +200,94 @@ export default function Projects() {
             {lang
               ? "Bu projemde ise messenger-app'i ReactJS ve Firebase kullanarak geliştirdim."
               : EN[3].projects[3].description}
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem className="timeline-item">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+          <div className="technologies">
+            <SiNextdotjs size={35} color="black" />
+            <SiTailwindcss size={35} color="#38bdf8" />
+            <SiVercel size={35} color="black" />
+          </div>
+          <a
+            href="https://dashboard-serifcolakel.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="link-project-demo blue green"
+          >
+            Live Demo
+          </a>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="success">
+            <GiGearHammer size={40} />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            style={{ color: "green", fontWeight: "bolder" }}
+          >
+            Dashboard App
+          </Typography>
+          <Typography>
+            {lang
+              ? "Bu projede Dashboard tasarımını ChartJS, NextJs ve TailwindCSS kullanarak geliştirdim. serifcolakel@gmail.com ve 1234 ile giriş yapabilirsiniz."
+              : EN[3].projects[4].description}
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem className="timeline-item">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+          <div className="technologies">
+            <SiNextdotjs size={35} color="blue" />
+            <FaSass size={35} color="purple" />
+            <SiMongodb size={35} color="green" />
+            <SiVercel size={35} color="black" />
+            <SiHeroku size={35} color="purple" />
+          </div>
+          <a
+            href="https://todo-serifcolakel.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="link-project-demo blue"
+          >
+            Live Demo
+          </a>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <GiGearHammer size={40} />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            style={{ color: "blue", fontWeight: "bolder" }}
+          >
+            TODO App
+          </Typography>
+          <Typography>
+            {lang
+              ? "Bu projede, NextJS, MongoDB, SASS, Vercel ve Heroku kullanarak başlangıç aşamasında full stack geliştiricileri tarafından tercih edilen Todo App'i geliştirdim."
+              : EN[3].projects[5].description}
           </Typography>
         </TimelineContent>
       </TimelineItem>

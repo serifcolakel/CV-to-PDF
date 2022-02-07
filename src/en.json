@@ -94,6 +94,12 @@
             },
             {
                 "description": "In this project, I developed the messenger-app using React JS and Firebase."
+            },
+            {
+                "description": "In this project, I developed the Dashboard design using ChartJS, NextJs and TailwindCSS. You can login with serifcolakel@gmail.com and 1234."
+            },
+            {
+                "description": "In this project, I developed the Todo App, which is preferred by full stack developers in the beginning phase, using NextJS, MongoDB, SASS, Vercel and Heroku."
             }
         ]
     }
