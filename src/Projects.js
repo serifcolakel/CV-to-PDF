@@ -254,7 +254,7 @@ export default function Projects() {
           color="text.secondary"
         >
           <div className="technologies">
-            <SiNextdotjs size={35} color="blue" />
+            <SiNextdotjs size={35} color="black" />
             <FaSass size={35} color="purple" />
             <SiMongodb size={35} color="green" />
             <SiVercel size={35} color="black" />
