@@ -6,11 +6,10 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { GiGearHammer } from "react-icons/gi";
-import { FaReact, FaSass } from "react-icons/fa";
 import EN from "./en.json";
 import { LangContext } from "./ComponentToPrint";
-
+import { GiGearHammer } from "react-icons/gi";
+import { FaReact, FaSass, FaShopify } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -288,6 +287,57 @@ export default function Projects() {
             {lang
               ? "Bu projede, NextJS, MongoDB, SASS, Vercel ve Heroku kullanarak başlangıç aşamasında full stack geliştiricileri tarafından tercih edilen Todo App'i geliştirdim."
               : EN[3].projects[5].description}
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem className="timeline-item">
+        <TimelineOppositeContent
+          sx={{ m: "auto 4" }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+          <div className="technologies">
+            <SiNextdotjs size={35} color="black" />
+            <SiTailwindcss size={35} color="#38bdf8" />
+            <FaShopify size={35} color="green" />
+          </div>
+          <a
+            href="https://serif-shopify.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="link-project-demo orange"
+          >
+            Live Demo
+          </a>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot style={{ color: "#ff5722" }} variant="outlined">
+            <GiGearHammer size={40} />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent
+          sx={{
+            py: "12px",
+            overflow: "hidden",
+          }}
+        >
+          <Typography
+            variant="h6"
+            component="span"
+            style={{
+              color: "#ff5722",
+              fontWeight: "bolder",
+            }}
+          >
+            Shopify App
+          </Typography>
+          <Typography>
+            {lang
+              ? "Shopify App'i NextJS, TailwindCSS, Shopify API kullanarak geliştirdim."
+              : EN[3].projects[6].description}
           </Typography>
         </TimelineContent>
       </TimelineItem>

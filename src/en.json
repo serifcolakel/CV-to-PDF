@@ -100,6 +100,9 @@
             },
             {
                 "description": "In this project, I developed the Todo App, which is preferred by full stack developers in the beginning phase, using NextJS, MongoDB, SASS, Vercel and Heroku."
+            },
+            {
+                "description": "I developed Shopify App using NextJS, TailwindCSS, Shopify API."
             }
         ]
     }
