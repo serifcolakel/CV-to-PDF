@@ -6,7 +6,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import EN from "./en.json";
+import EN from "../../en.json";
 import { LangContext } from "./ComponentToPrint";
 import { GiGearHammer } from "react-icons/gi";
 import { FaReact, FaSass, FaShopify } from "react-icons/fa";

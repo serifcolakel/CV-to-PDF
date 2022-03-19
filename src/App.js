@@ -1,10 +1,16 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { ComponentToPrint } from "./ComponentToPrint";
-
+import { ComponentToPrint } from "./pages/serif/ComponentToPrint";
+import Home from "./components/Home";
+import { Print } from "./components/Forms/Print";
 function App() {
   return (
     <div>
-      <ComponentToPrint />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create" element={<Print />} />
+        <Route path="/serifcolakel" element={<ComponentToPrint />} />
+      </Routes>
     </div>
   );
 }

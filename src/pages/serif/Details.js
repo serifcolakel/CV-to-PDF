@@ -1,14 +1,14 @@
-import { Grid, Typography } from "@mui/material";
 import React, { useContext } from "react";
+import { Grid, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { useWindowWidth } from "@react-hook/window-size";
+import { LangContext } from "./ComponentToPrint";
 import Paper from "@mui/material/Paper";
 import TimeLine from "./TimeLine";
 import EducationTimeLine from "./EducationTimeLine";
 import Skill from "./Skill";
-import { useWindowWidth } from "@react-hook/window-size";
 import Projects from "./Projects";
-import EN from "./en.json";
-import { LangContext } from "./ComponentToPrint";
+import EN from "../../en.json";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,

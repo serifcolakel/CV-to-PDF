@@ -1,4 +1,5 @@
 import * as React from "react";
+import { LangContext } from "./ComponentToPrint";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -8,8 +9,7 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { MdEngineering } from "react-icons/md";
 import Typography from "@mui/material/Typography";
-import EN from "./en.json";
-import { LangContext } from "./ComponentToPrint";
+import EN from "../../en.json";
 
 export default function TimeLine() {
   const lang = React.useContext(LangContext);

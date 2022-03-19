@@ -3,13 +3,13 @@ import { BsFillTelephoneFill, BsLinkedin } from "react-icons/bs";
 import { AiFillGithub, AiOutlineGlobal } from "react-icons/ai";
 import { MdLocationPin, MdMail } from "react-icons/md";
 import { styled } from "@mui/material/styles";
+import { Rating, Typography } from "@mui/material";
+import { useWindowWidth } from "@react-hook/window-size";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import ReactToPrint from "react-to-print";
-import { Rating, Typography } from "@mui/material";
 import Details from "./Details";
-import { useWindowWidth } from "@react-hook/window-size";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -26,7 +26,6 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
   const componentRef = useRef();
   const sliderWidth = useWindowWidth();
   const [language, setLanguage] = React.useState(true);
-
   return (
     <LangContext.Provider value={language}>
       <div className="App" ref={componentRef}>
@@ -37,12 +36,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
                 <img
                   src="https://i.hizliresim.com/5h20dz6.jpg"
                   alt="serif-foto"
-                  style={{
-                    width: "180px",
-                    border: "5px solid #ff5722",
-                    borderRadius: "50%",
-                    objectFit: "cover",
-                  }}
+                  className="w-[180px] border-[5px] border-[#ff5722] rounded-full object-cover mx-auto"
                 />
                 <ReactToPrint
                   trigger={() => (

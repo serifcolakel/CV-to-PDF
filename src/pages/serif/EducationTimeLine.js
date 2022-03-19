@@ -9,7 +9,7 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { MdSchool } from "react-icons/md";
 import Typography from "@mui/material/Typography";
 import { LangContext } from "./ComponentToPrint";
-import EN from "./en.json";
+import EN from "../../en.json";
 
 export default function TimeLine() {
   const lang = React.useContext(LangContext);
