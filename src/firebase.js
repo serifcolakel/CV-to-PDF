@@ -2,12 +2,12 @@ import { getStorage } from "firebase/storage";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBI5-8O0Im3WUL9aEWxQnN-KQhQHILyABg",
-  authDomain: "cv2pdf-image-upload.firebaseapp.com",
-  projectId: "cv2pdf-image-upload",
-  storageBucket: "cv2pdf-image-upload.appspot.com",
-  messagingSenderId: "1027454581559",
-  appId: "1:1027454581559:web:384a92f1c3c3360d4bf8b2",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_API_ID,
 };
 
 export const app = initializeApp(firebaseConfig);
