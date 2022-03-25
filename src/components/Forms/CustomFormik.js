@@ -50,8 +50,9 @@ export default function CustomFormik({
                 ? "Kayıtlı Verilerinizi Kapat"
                 : "Kayıtlı Verilerinizi Göster"}
             </p>
-            {showLocale && data !== null
-              ? data.map((formItem, idx) =>
+            {showLocale && data !== null ? (
+              <>
+                {data.map((formItem, idx) =>
                   item.map((item, i) => {
                     return (
                       <p key={i}>
@@ -62,8 +63,9 @@ export default function CustomFormik({
                       </p>
                     );
                   })
-                )
-              : null}
+                )}
+              </>
+            ) : null}
             {data === null && showLocale ? (
               <p className="text-red-600 font-semibold">
                 Gösterecek Veri bulamadık

@@ -32,7 +32,7 @@ export default function DownloadImage() {
   }
   return (
     <>
-      {image === null && (
+      {image === null && progress < 80 ? (
         <Stack direction="column" alignItems="center" spacing={2}>
           <label htmlFor="contained-button-file">
             <Input
@@ -44,6 +44,10 @@ export default function DownloadImage() {
           </label>
           <progress value={progress} max="100" />
         </Stack>
+      ) : (
+        <p className="text-green-500 font-semibold">
+          Your image succesfully uploaded.Please fill the form
+        </p>
       )}
     </>
   );
