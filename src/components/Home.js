@@ -7,7 +7,6 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
-
 const link = [
   {
     link: "https://www.facebook.com/Srf247/",
@@ -130,7 +129,6 @@ export default function Home() {
             </button>
           </div>
         </div>
-
         <section className="container mx-auto px-6 p-10">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
             Serif Colakel!
@@ -265,6 +263,7 @@ export default function Home() {
                 >
                   <img
                     className="animate-bounce-slow "
+                    alt="Serif Colakel"
                     src="https://img.icons8.com/color/48/000000/double-up--v2.png"
                   />
                 </a>
@@ -275,6 +274,7 @@ export default function Home() {
                     <a
                       href={x.link}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="scale-150 hover:text-image-color-1 "
                       key={i}
                     >

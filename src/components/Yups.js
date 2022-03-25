@@ -2,11 +2,11 @@ import * as Yup from "yup";
 export const Profile = {
   name: "Profile",
   formSchema: Yup.object().shape({
-    imageUrl: Yup.string()
-      .url("Please enter a valid URL")
-      .min(3, "Must be between 3 and 75 characters")
-      .max(75, "Must be between 3 and 75 characters")
-      .required("Image Url is required"),
+    // imageUrl: Yup.string()
+    //   .url("Please enter a valid URL")
+    //   .min(3, "Must be between 3 and 75 characters")
+    //   .max(75, "Must be between 3 and 75 characters")
+    //   .required("Image Url is required"),
     fullName: Yup.string()
       .min(3, "Must be between 3 and 75 characters")
       .max(75, "Must be between 3 and 75 characters")
@@ -18,10 +18,10 @@ export const Profile = {
       .required("Job is required"),
   }),
   item: [
-    {
-      title: "Profil Fotoğrafınız (URL)",
-      name: "imageUrl",
-    },
+    // {
+    //   title: "Profil Fotoğrafınız (URL)",
+    //   name: "imageUrl",
+    // },
     {
       title: "İsim Soyisim",
       name: "fullName",
@@ -32,7 +32,7 @@ export const Profile = {
     },
   ],
   initialValues: {
-    imageUrl: "",
+    // imageUrl: "",
     fullName: "",
     job: "",
   },

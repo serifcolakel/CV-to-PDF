@@ -7,9 +7,8 @@ export default function Form({ yups, isIcon }) {
   const [showForm, setShowForm] = React.useState(false);
   const [form, setForm] = React.useState(null);
   useEffect(() => {
-    console.log("124");
+    console.log("Form Change");
   }, [form]);
-  console.log(isIcon, "isIcon");
   return (
     <>
       {isIcon === undefined ? (
@@ -27,7 +26,7 @@ export default function Form({ yups, isIcon }) {
             setShowForm(!showForm);
             setForm(yups);
           }}
-          className="bg-[#ff562222] rounded-lg shadow-2xl text-[#ff5722] text-2xl font-bold py-24 cursor-pointer my-12 bg-customers-card-bg bg-right bg-no-repeat"
+          className="bg-[#ff562222] rounded-lg shadow-2xl text-[#ff5722] text-2xl font-bold text-center py-24 cursor-pointer my-12 bg-customers-card-bg bg-right bg-no-repeat"
         >
           {yups.name} Detaylarını buraya girebilirsiniz...
         </div>

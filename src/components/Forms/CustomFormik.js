@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 import { Button, TextField } from "@mui/material";
+import DownloadImage from "./DownloadImage";
 export default function CustomFormik({
   initialValues,
   item,
@@ -72,6 +73,9 @@ export default function CustomFormik({
               <p
                 className="cursor-pointer py-2 px-4 border-2 rounded-lg font-bold"
                 onClick={() => {
+                  if (name === "Profile") {
+                    localStorage.removeItem("image");
+                  }
                   localStorage.removeItem(name);
                   setShowLocale(!showLocale);
                 }}
@@ -82,7 +86,7 @@ export default function CustomFormik({
             <p className="text-center">
               {name} formunu doldurup kaydederek, CV'nize ekleyebilirsiniz.
             </p>
-
+            {name === "Profile" && <DownloadImage />}
             {item.map((formItem, idx) => (
               <label
                 key={idx}

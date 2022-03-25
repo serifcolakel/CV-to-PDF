@@ -13,6 +13,7 @@ import DetailsMember from "./DetailsMember";
 import Form from "../Form";
 import { Profile, Contact, References, Language, Skills } from "../Yups";
 import Skill from "./Skills";
+import Draggable from "react-draggable";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -39,12 +40,24 @@ export const Print = React.forwardRef((props, ref) => {
   const [languages] = React.useState(
     JSON.parse(localStorage.getItem("Language"))
   );
-  console.log(profile);
   return (
     <div className="App" ref={componentRef}>
       <Box sx={{ flexGrow: 1, padding: 1 }}>
         <Grid container spacing={2}>
           <Grid item xs={sliderWidth >= 768 ? 4 : 12}>
+            {/* <Draggable
+              handle=".handle"
+              defaultPosition={{ x: 0, y: 0 }}
+              position={null}
+              grid={[25, 25]}
+              scale={1}
+              bounds={{ top: -400, left: -400, right: 400, bottom: 400 }}
+            >
+              <div className="bg-[#1b1f30] cursor-move text-white">
+                <div className="handle">Drag from here</div>
+                <div>This readme is really dragging on...</div>
+              </div>
+            </Draggable> */}
             <Item>
               <div className="flex flex-row justify-between items-center bg-[#232537] px-4 py-2 border-l-4 border-[#ff5722] ">
                 <span className="text-sm text-white uppercase font-bold">
@@ -55,7 +68,7 @@ export const Print = React.forwardRef((props, ref) => {
               {profile !== null ? (
                 <>
                   <img
-                    src={profile[0]?.imageUrl}
+                    src={localStorage.getItem("image")}
                     alt="serif-foto"
                     className="w-[180px] border-[5px] border-[#ff5722] rounded-full object-cover mx-auto"
                   />
