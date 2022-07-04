@@ -4,7 +4,7 @@ test.js
 testDrag.html
 # dependencies
 /node_modules
-/.pnp
+/.pnpw
 .pnp.js
 .env
 # testing

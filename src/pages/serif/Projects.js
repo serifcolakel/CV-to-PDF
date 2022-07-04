@@ -38,6 +38,10 @@ export default function Projects() {
             <SiHeroku size={35} color="purple" />
           </div>
           <a
+            style={{
+              width: "50%",
+              padding: "10px",
+            }}
             href="https://getir-clone-delta.vercel.app/"
             target="_blank"
             rel="noreferrer"
@@ -80,6 +84,10 @@ export default function Projects() {
             <SiTailwindcss size={35} color="#38bdf8" />
           </div>
           <a
+            style={{
+              width: "50%",
+              padding: "10px",
+            }}
             href="https://spotify-clone-rosy.vercel.app/"
             target="_blank"
             rel="noreferrer"
@@ -122,6 +130,10 @@ export default function Projects() {
             <SiTailwindcss size={35} color="#38bdf8" />
           </div>
           <a
+            style={{
+              width: "50%",
+              padding: "10px",
+            }}
             href="https://tatilbudur-serifcolakel.vercel.app/"
             target="_blank"
             rel="noreferrer"
@@ -172,6 +184,10 @@ export default function Projects() {
             <SiFirebase size={35} color="orange" />
           </div>
           <a
+            style={{
+              width: "50%",
+              padding: "10px",
+            }}
             href="https://messenger-app-serifcolakel.vercel.app/"
             target="_blank"
             rel="noreferrer"
@@ -215,6 +231,10 @@ export default function Projects() {
             <SiVercel size={35} color="black" />
           </div>
           <a
+            style={{
+              width: "50%",
+              padding: "10px",
+            }}
             href="https://dashboard-serifcolakel.vercel.app/"
             target="_blank"
             rel="noreferrer"
@@ -260,6 +280,10 @@ export default function Projects() {
             <SiHeroku size={35} color="purple" />
           </div>
           <a
+            style={{
+              width: "50%",
+              padding: "10px",
+            }}
             href="https://todo-serifcolakel.vercel.app/"
             target="_blank"
             rel="noreferrer"
@@ -303,6 +327,10 @@ export default function Projects() {
             <FaShopify size={35} color="green" />
           </div>
           <a
+            style={{
+              width: "50%",
+              padding: "10px",
+            }}
             href="https://serif-shopify.vercel.app/"
             target="_blank"
             rel="noreferrer"
@@ -337,6 +365,106 @@ export default function Projects() {
           <Typography>
             {lang
               ? "Shopify App'i NextJS, TailwindCSS, Shopify API kullanarak geliştirdim."
+              : EN[3].projects[6].description}
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem className="timeline-item">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+          <div className="technologies">
+            <FaReact size={35} color="blue" />
+            <SiFirebase size={35} color="orange" />
+          </div>
+          <a
+            style={{
+              backgroundColor: "violet",
+              width: "50%",
+              padding: "10px",
+            }}
+            href="https://etstur-findevent.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="link-project-demo grey"
+          >
+            Live Demo
+          </a>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="inherit">
+            <GiGearHammer
+              size={40}
+              style={{
+                color: "violet",
+              }}
+            />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            style={{ color: "violet", fontWeight: "bolder" }}
+          >
+            Find Event
+          </Typography>
+          <Typography>
+            {lang
+              ? "Bu projede etstur'un oluşturduğu hiring challenge katıldım."
+              : EN[3].projects[5].description}
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem className="timeline-item">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+          <div className="technologies">
+            <SiNextdotjs size={35} color="black" />
+            <SiTailwindcss size={35} color="#38bdf8" />
+            <SiVercel size={35} color="black" />
+          </div>
+          <a
+            style={{
+              backgroundColor: "green",
+              width: "50%",
+              padding: "10px",
+            }}
+            href="https://yusuf-oztel.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="link-project-demo blue green"
+          >
+            Live Demo
+          </a>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="success">
+            <GiGearHammer size={40} />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            style={{ color: "green", fontWeight: "bolder" }}
+          >
+            Yusuf Oztel - Portfolio
+          </Typography>
+          <Typography>
+            {lang
+              ? "Bu projede NextJS, TailwindCSS, TypeScript ve Vercel kullanarak Yusuf Öztel'in portföyünü geliştirdim."
               : EN[3].projects[6].description}
           </Typography>
         </TimelineContent>

@@ -103,6 +103,12 @@
             },
             {
                 "description": "I developed Shopify App using NextJS, TailwindCSS, Shopify API."
+            },
+            {
+                "description": "In this project, I participated in the hiring challenge competition created by etstur."
+            },
+            {
+                "description": "In this project, I developed the portfolio of Yusuf Oztel using NextJS, TailwindCSS, TypeScript and Vercel."
             }
         ]
     }

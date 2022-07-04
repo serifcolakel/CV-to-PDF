@@ -21,6 +21,54 @@ export default function TimeLine() {
           sx={{ m: "auto 0" }}
           align="right"
           variant="body2"
+        >
+          {lang ? "01.03.2022 - Devam ediyor." : EN[1].experience[0].date}
+          <Typography
+            style={{
+              color: "violet",
+            }}
+          >
+            {lang ? "İstanbul (Remote)" : EN[1].experience[0].location}
+          </Typography>
+          <strong>
+            {lang ? "Front-end Developer" : EN[1].experience[0].role}
+          </strong>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="inherit">
+            <MdEngineering
+              size={40}
+              style={{
+                color: "violet",
+              }}
+            />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            style={{ color: "violet", fontWeight: "bolder" }}
+          >
+            {lang
+              ? "KG Bilgi İşlem Teknoloji A.Ş."
+              : EN[1].experience[0].company}
+          </Typography>
+
+          <Typography>
+            {lang
+              ? "React ve NextJs ile geliştirilen frontend projeleri xd adobe tasarımlarına göre ve tasklara göre geliştirildi. Ayrıca şirket tarafından verilen sunucu üzerine Nginx, pm2(process manager), jenkins(commit ile tetiklenerek tekrardan build için) ile script yazılarak build işlemleri gerçekleştirildi. Benim için iyi bir deneyim oldu."
+              : EN[1].experience[0].description}
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
           color="text.secondary"
         >
           {lang ? "02.2020 - 04.2020" : EN[1].experience[0].date}
