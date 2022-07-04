@@ -22,16 +22,16 @@ export default function TimeLine() {
           align="right"
           variant="body2"
         >
-          {lang ? "01.03.2022 - Devam ediyor." : EN[1].experience[0].date}
+          {lang ? "01.03.2022 - Devam ediyor." : EN[1].experience[5].date}
           <Typography
             style={{
               color: "violet",
             }}
           >
-            {lang ? "İstanbul (Remote)" : EN[1].experience[0].location}
+            {lang ? "İstanbul (Remote)" : EN[1].experience[5].location}
           </Typography>
           <strong>
-            {lang ? "Front-end Developer" : EN[1].experience[0].role}
+            {lang ? "Front-end Developer" : EN[1].experience[5].role}
           </strong>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -54,13 +54,13 @@ export default function TimeLine() {
           >
             {lang
               ? "KG Bilgi İşlem Teknoloji A.Ş."
-              : EN[1].experience[0].company}
+              : EN[1].experience[5].company}
           </Typography>
 
           <Typography>
             {lang
               ? "React ve NextJs ile geliştirilen frontend projeleri xd adobe tasarımlarına göre ve tasklara göre geliştirildi. Ayrıca şirket tarafından verilen sunucu üzerine Nginx, pm2(process manager), jenkins(commit ile tetiklenerek tekrardan build için) ile script yazılarak build işlemleri gerçekleştirildi. Benim için iyi bir deneyim oldu."
-              : EN[1].experience[0].description}
+              : EN[1].experience[5].description}
           </Typography>
         </TimelineContent>
       </TimelineItem>

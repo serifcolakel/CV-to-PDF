@@ -38,6 +38,13 @@
                 "role": "Internship",
                 "company": "M & B Bilisim",
                 "description": "Performing Maintenance, Repair and Installation of Security Systems"
+            },
+            {
+                "date": "01.03.2022 - Continuing",
+                "location": "Istanbul (Remote)",
+                "role": "Frontend Developer",
+                "company": "KG Information Technology Inc.",
+                "description": "Frontend projects developed with React and NextJs were developed according to xd adobe designs and tasks. In addition, build operations were carried out by writing scripts on the server given by the company with Nginx, pm2 (process manager), jenkins (to build again by triggering with commit). It's been a good experience for me."
             }
         ]
     },
