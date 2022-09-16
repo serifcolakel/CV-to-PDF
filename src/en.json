@@ -1,6 +1,6 @@
 [
     {
-        "summary": "As a graduation project, during my internship at Isdemir, I had the opportunity to examine the quality control and identity of the steel in the steel production of Parstech, which is formed according to certain conditions, and the detection of the deterioration caused by the production errors that occur during the production by using image processing method and recording it on the determined identity is evaluated according to customer requests. We carried out the project on the development of the project under the consultancy of Prof.Dr.Abdulkadir Şengür. Also, I am still developing myself on these issues. I have been developing myself and producing projects in the front-end field for about 6 months in order to develop my interest in software in different fields. You can access the details of the projects on my github page."
+        "summary": "I am a graduate of Fırat University, Department of Electrical and Electronics Engineering. I am also a Double Major student in Computer Engineering. I've been a front-end developer for 1 year. I am trying to develop projects by using ReactJS, NextJS, HTML, CSS, SASS, Tailwind, Styled Component, React Native and TypeScript / JavaScript languages effectively and following the agenda. I'm also trying to learn backend paradigms with NodeJS (Express / Prisma / MySQL / PostgreSQL). In addition, in my last work experience, I tried to automate the build processes on the server using technologies such as pm2 / Nginx / jenkins. This was also a good experience for me."
     },
     {
         "experience": [
@@ -22,7 +22,7 @@
                 "date": "06.2014 - 12.2014",
                 "location": "Antakya / Hatay",
                 "role": "Electrician",
-                "company": "Yalcin Elektrik",
+                "company": "Yalcin Electric",
                 "description": "House and construction electrical maintenance and repair, sales of materials, maintenance and repair of electrical appliances"
             },
             {
@@ -40,7 +40,7 @@
                 "description": "Performing Maintenance, Repair and Installation of Security Systems"
             },
             {
-                "date": "01.03.2022 - Continuing",
+                "date": "01.03.2022 - 08.07.2022",
                 "location": "Istanbul (Remote)",
                 "role": "Frontend Developer",
                 "company": "KG Information Technology Inc.",
@@ -116,6 +116,9 @@
             },
             {
                 "description": "In this project, I developed the portfolio of Yusuf Oztel using NextJS, TailwindCSS, TypeScript and Vercel."
+            },
+            {
+                "description": "In this project, I developed the mobile application of Getir using React Native, TypeScript and redux-toolkit."
             }
         ]
     }

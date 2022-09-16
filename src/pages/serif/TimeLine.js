@@ -22,7 +22,7 @@ export default function TimeLine() {
           align="right"
           variant="body2"
         >
-          {lang ? "01.03.2022 - Devam ediyor." : EN[1].experience[5].date}
+          {lang ? "01.03.2022 - 08.07.2022" : EN[1].experience[5].date}
           <Typography
             style={{
               color: "violet",

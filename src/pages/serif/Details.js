@@ -46,19 +46,17 @@ export default function Details() {
         </Typography>
         {lang ? (
           <p style={{ padding: 20 }}>
-            Bitirme projesi olarak İsdemir bünyesindeki stajim sırasında
-            inceleme fırsatı bulduğum Parstech adlı firmaya ait çelik üretiminde
-            kalite kontrol ve çeliğin kimliğinin belirli şartlara göre
-            oluşturulup üzerinde üretim sırasında meydana gelen üretim
-            hatalarından dolayı oluşan bozunmaların görüntü işleme yöntemi
-            kullanılarak saptanması ve belirlenen kimliğine üzerine kaydedilmesi
-            müşteri isteklerine göre değerlendirilir hale getilmesini konu alan
-            projeyi Sayın Prof.Dr.Abdulkadir Şengür danışmanlığında
-            gerçekleştirdik.Ayrıca kendimi hala bu konularda
-            geliştirmekteyim.Yazılıma olan ilgimi farklı alanda geliştirmek için
-            yaklaşık 6 aydır front-end alanında kendimi geliştirmekte ve
-            projeler üretmekteyim.Projelerin detayları için github sayfamdan
-            erişebilirsiniz."
+            Fırat Üniversitesi Elektrik ve Elektronik Mühendisliği Bölümü
+            mezunuyum. Aynı zamanda Bilgisayar Mühendisliğinde Çift Anadal
+            öğrencisiyim. 1 yıldır Front-end geliştiriciliği yapıyorum. ReactJS,
+            NextJS, HTML, CSS, SASS, Tailwind, Styled Component ve React Native
+            ile TypeScript / JavaScript dillerini etkin kullanarak ve gündemi
+            takip ederek projeler geliştirmeye çalışıyorum. Ayrıca NodeJS
+            (Express / Prisma / MySQL / PostgreSQL) ile backend paradigmalarını
+            öğrenmeye çalışıyorum. Ek olarak son iş tecrübem de pm2 / Nginx /
+            jenkins gibi teknolojileri kullanarak sunucu üzerindeki build
+            işlemlerini otomatikleştirmeye çalıştım. Bu da benim için iyi bir
+            deneyim oldu.
           </p>
         ) : (
           <p style={{ padding: 20 }}> {EN[0].summary}</p>

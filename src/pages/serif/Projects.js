@@ -17,6 +17,7 @@ import {
   SiFirebase,
   SiVercel,
   SiMongodb,
+  SiTypescript,
 } from "react-icons/si";
 
 import Typography from "@mui/material/Typography";
@@ -466,6 +467,52 @@ export default function Projects() {
             {lang
               ? "Bu projede NextJS, TailwindCSS, TypeScript ve Vercel kullanarak Yusuf Öztel'in portföyünü geliştirdim."
               : EN[3].projects[6].description}
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem className="timeline-item">
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+          <div className="technologies">
+            <SiTypescript size={35} color="blue" />
+            <FaReact size={35} color="blue" />
+          </div>
+          <a
+            style={{
+              width: "50%",
+              padding: "10px",
+            }}
+            href="https://www.youtube.com/watch?v=m5N7z8EUGUo"
+            target="_blank"
+            rel="noreferrer"
+            className="link-project-demo blue"
+          >
+            Project Video
+          </a>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary">
+            <GiGearHammer size={40} />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            style={{ color: "blue", fontWeight: "bolder" }}
+          >
+            Getir Mobile App
+          </Typography>
+          <Typography>
+            {lang
+              ? "Bu projede React Native, TypeScript ve redux-toolkit kullanarak Getir'in mobil uygulamasını geliştirdim."
+              : EN[3].projects[9].description}
           </Typography>
         </TimelineContent>
       </TimelineItem>
