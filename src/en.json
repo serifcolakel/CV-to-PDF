@@ -45,6 +45,13 @@
                 "role": "Frontend Developer",
                 "company": "KG Information Technology Inc.",
                 "description": "Frontend projects developed with React and NextJs were developed according to xd adobe designs and tasks. In addition, build operations were carried out by writing scripts on the server given by the company with Nginx, pm2 (process manager), jenkins (to build again by triggering with commit). It's been a good experience for me."
+            },
+            {
+                "date": "18.07.2022 - ...",
+                "location": "Ankara (Remote)",
+                "role": "React & React Native Developer (Frontend Developer)",
+                "company": "IDVLABS SOFTWARE AND CONSULTING HIZMETLERI INC.",
+                "description": "Project delivery was carried out in accordance with the design and code standards of the Private Pension System in the mobile application of a bank of Turkish origin. In this Project, in addition to experiencing important information about Git (cherry-pick, etc.), the interactions between designs and services were completed in accordance with the functioning in the web and mobile-based project created with React-Native. Currently, I support the development of Credit Card conversions within the bank."
             }
         ]
     },

@@ -8,6 +8,7 @@ const skills = [
   { name: "TailwindCSS", level: 4 },
   { name: "SASS", level: 4 },
   { name: "React", level: 4 },
+  { name: "React Native", level: 4 },
   { name: "NextJS", level: 4 },
   { name: "Redux", level: 3 },
   { name: "pm2 for Deployment React/NextJS project", level: 3 },

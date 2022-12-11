@@ -16,6 +16,54 @@ export default function TimeLine() {
 
   return (
     <Timeline position="alternate">
+       <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
+          align="right"
+          variant="body2"
+        >
+          {lang ? "01.03.2022 - 08.07.2022" : EN[1].experience[6].date}
+          <Typography
+            style={{
+              color: "blue",
+            }}
+          >
+            {lang ? "Ankara (Remote)" : EN[1].experience[6].location}
+          </Typography>
+          <strong>
+            {lang ? "React & React Native Developer (Frontend Developer)" : EN[1].experience[6].role}
+          </strong>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="inherit">
+            <MdEngineering
+              size={40}
+              style={{
+                color: "blue",
+              }}
+            />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            style={{ color: "blue", fontWeight: "bolder" }}
+          >
+            {lang
+              ? "IDVLABS YAZILIM VE DANIŞMANLIK HİZMETLERİ A.Ş."
+              : EN[1].experience[6].company}
+          </Typography>
+
+          <Typography>
+            {lang
+              ? "Türkiye menşeli bir bankanın mobil uygulamasında Bireysel Emeklilik Sisteminin tasarım ve kod standartlarına uygun olarak proje teslimi gerçekleştirildi. Bu Proje de Git ile ilgili önemli bilgilere (cherry-pick vb.) konuları deneyimlemenin yanı sıra React-Native ile oluşturulmuş web ve mobil tabanlı projede tasarımlar ile servisler arasındaki etkileşimler işleyişe uygun olarak tamamlandı. Güncel olarak ise banka içerisinde Kredi Kartı dönüşümleri tarafında geliştirmelere destek vermekteyim."
+              : EN[1].experience[6].description}
+          </Typography>
+        </TimelineContent>
+      </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
